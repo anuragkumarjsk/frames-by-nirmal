@@ -1,0 +1,35 @@
+.nav_container{
+    width: 100%;
+    display: flex;
+    flex:1;
+    margin-block:1rem;
+    padding-inline: 1rem;
+}
+.nav_home{
+    flex: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav_links{
+     display: flex;
+     flex: 8;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     list-style: none;
+     padding: 0px;
+     margin:0px;
+}
+.link_text{
+    color: gray;
+    font-size: 16px;
+    margin: 7.5px;
+    font-family: Montserrat-Regular;
+    border-bottom: 1px solid transparent ;
+
+}
+.nav_links :hover {
+    color: black;
+    border-bottom: 1px solid black ;
+}

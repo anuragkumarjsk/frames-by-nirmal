@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    min-height: 20vh;
+    background-color: #F5F5DB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.internal_links{
+    width: 80%;
+    font-size: 36px;
+    font-family: DancingScript-Regular;
+    padding-block:10px;
+    color: brown;
+}
+.social{
+    width: 80%;
+    border-top: 1.5px solid #D7D8F0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.social .left{}
+.social .mid{}
+.social .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social .right .image_container{
+    padding: 5px;
+}
