@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
      <div className={styles.internal_links}>
-      <p>"Our marvellous work is both appreciated and loved by our clients and the immense amount of testimonials we have, speaks volumes about our brand and our work."</p>
+      <p>Our marvellous work is both appreciated and loved by our clients and the immense amount of testimonials we have, speaks volumes about our brand and our work</p>
      </div>
      <div className={styles.social}>
       <div className={styles.left}></div>
