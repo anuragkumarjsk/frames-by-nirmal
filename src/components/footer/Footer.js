@@ -6,6 +6,17 @@ const Footer = () => {
     <div className={styles.container}>
      <div className={styles.internal_links}>
       <p>Our marvellous work is both appreciated and loved by our clients and the immense amount of testimonials we have, speaks volumes about our brand and our work</p>
+     <div>
+      <p style={{fontSize:'28px',paddingTop:'15px'}}>Find Us</p>
+      <a href='https://goo.gl/maps/aC214mt6CRJ8Hjx46' >
+      <div className={styles.location_block}>
+            <div className={styles.location_pin}>
+             <Image src={'/Icons/location.svg'} width={25} height={35} alt='location'/>
+            </div> 
+            <p className={styles.location_address}>97, Thirumudi saedhu raman, Krishna Nagar main Rd, Puducherry, 605011 ( Opp.45 feet road petrol bunk)</p>
+      </div>
+      </a>
+     </div>
      </div>
      <div className={styles.social}>
       <div className={styles.left}></div>

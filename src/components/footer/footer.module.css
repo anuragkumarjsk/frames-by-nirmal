@@ -10,10 +10,26 @@
 .internal_links{
     width: 80%;
     font-size: 36px;
-    font-family: DancingScript-Regular;
+    font-family: 'DancingScript-Regular';
     padding-block:10px;
     color: brown;
 }
+
+.location_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.location_pin{
+    padding-inline: 10px;
+}
+.location_address{
+    font-size: 24px;
+    padding-block: 5px;
+    font-family: Montserrat-SemiBold;
+}
+
 .social{
     width: 80%;
     border-top: 1.5px solid #D7D8F0;
