@@ -4,14 +4,87 @@
   justify-content: center;
   align-items: center;
 }
+/*camera reel*/
+.camera_reel {
+width: 100vw;
+height: 380px;
+padding: 30px;
+margin-block: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+overflow: hidden;
+}
+.camera_segment {
+flex: 3;
+}
+.reel_segment {
+flex: 3;
+}
+.reel_segment_1 {
+  flex: 3;
+  }
 
+/*camera component*/
+.cameraicon_container{
+  margin : 10px;
+  position: relative;
+  /* background-image:url('/Icons/camera.svg'); */
+}
+.camera{
+  position: relative;
+}
+.lens{
+  position: absolute;
+  left: 39%;
+  bottom: 23%;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 3s ease-in-out;
+}
+.lens:hover{
+  position: absolute;
+  left: 39%;
+  bottom: 23%;
+  color: white;
+  transform: rotate(360deg);
+}
+
+/* runner component */
+.runner_container{
+  width: 100%;
+  margin: 0px;
+  background-color: white;
+  overflow: hidden;
+  margin-block: 0px;
+  transition: transform 4s ease-in;
+}
+.runner_container:hover {
+  transform: translateY(-1200px);
+}
+.runner_track{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.runner_image {
+  width: auto;
+  height: 380px;
+  padding: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* two_x_two */
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 10px; /* Adjust the gap as per your requirement */
   width: 100%; /* Set the width of the container */
 }
-
 .gridItem {
   width: 100%;
   height: 100vh; /* Set the height of each image */
