@@ -27,9 +27,16 @@
     margin: 7.5px;
     font-family: Montserrat-Regular;
     border-bottom: 1px solid transparent ;
-
+}
+.link_text_active{
+    color: black;
+    font-size: 16px;
+    margin: 7.5px;
+    font-family: Montserrat-Regular;
+    border-bottom: 1px solid black ;
 }
 .nav_links :hover {
     color: black;
     border-bottom: 1px solid black ;
+    
 }

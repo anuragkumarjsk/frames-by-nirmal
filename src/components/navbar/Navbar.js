@@ -1,6 +1,8 @@
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './nav.module.css'
+import { usePathname } from 'next/navigation';
 const navlist = [
     {routeName : 'newborn', href : '/newborn' },
     {routeName : 'toddler', href : '/toddlers' },
@@ -13,6 +15,8 @@ const navlist = [
 ]
 
 const Navbar = () => {
+let pathname = usePathname()
+console.log(pathname)
   return (
     <nav className={styles.nav_container}>
       <ul className={styles.nav_home}>
@@ -24,9 +28,10 @@ const Navbar = () => {
       </ul>  
       <ul className={styles.nav_links}>
         {navlist.map((item)=>{
+          console.log('/'+item.routeName )
         return (<li key={item.href}>
           <Link href={item.href} legacyBehavior>
-            <a className={styles.link_text}>{item.routeName}</a>
+            <a className={item.href === pathname ? styles.link_text_active:styles.link_text}>{item.routeName}</a>
           </Link>
         </li>)
         })}
